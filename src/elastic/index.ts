@@ -23,11 +23,11 @@ class ElasticSearch {
       const instance = new Client({ node: url, auth: { username, password } });
       const ping = await instance.ping({});
       if (ping.statusCode !== 200)
-        throw Error("Elasticsearch Cluster not reachable");
-      global.log("Elasticsearch Cluster conneted");
+        throw Error("Elasticsearch Cluster Not Reachable");
+      global.log("Elasticsearch Cluster Connected");
       this.client = instance;
     } catch (error) {
-      global.log("Error - ElasticSearch -> create connection", error);
+      global.log("Error - ElasticSearch -> createConnection", error);
     }
   }
   async insert(index: string, data: object = {}) {
