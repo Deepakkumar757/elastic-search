@@ -1,0 +1,7 @@
+{
+  "elastic": {
+    "url": "https://dev-elasticsearch.jinglebid.com/",
+    "username": "elastic",
+    "password": "Kaay@123"
+  }
+}
